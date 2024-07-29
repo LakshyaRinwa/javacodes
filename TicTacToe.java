@@ -70,13 +70,13 @@ public class TicTacToe {
 
     public static void main(String[] args) {
         TicTacToe game = new TicTacToe();
-        Scanner scanner = new Scanner(System.in);
+        Scanner x = new Scanner(System.in);
 
         while (true) {
             game.printBoard();
             System.out.println("Player " + game.currentPlayer + "'s turn. Enter row and column:");
-            int row = scanner.nextInt();
-            int col = scanner.nextInt();
+            int row = x.nextInt();
+            int col = x.nextInt();
             if (game.makeMove(row, col)) {
                 if (game.hasWon(game.currentPlayer)) {
                     game.printBoard();
