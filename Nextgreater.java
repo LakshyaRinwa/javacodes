@@ -1,12 +1,6 @@
 import java.util.*;
 
 public class Nextgreater {
-    public static void main(String[] args) {
-        int[] array = {4, 5, 2, 25};
-        int[] result = nextGreaterElement(array);
-        System.out.println("Output: " + Arrays.toString(result));
-    }
-
     public static int[] nextGreaterElement(int[] array) {
         int[] result = new int[array.length];
         Stack<Integer> stack = new Stack<>();
@@ -24,5 +18,11 @@ public class Nextgreater {
         }
 
         return result;
+       
+    }
+    public static void main(String[] args) {
+        int[] array = {4, 5, 2, 25};
+        int[] result = nextGreaterElement(array);
+        System.out.println("Output: " + Arrays.toString(result));
     }
 }

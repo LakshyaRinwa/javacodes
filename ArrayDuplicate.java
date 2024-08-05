@@ -12,17 +12,17 @@ public class ArrayDuplicate {
         int k = 0;
         arr[k++] = arr[0]; 
 
-        for (int i = 1; i < n; i++) {
-            boolean duplicate = false;
-            for (int j = 0; j < k; j++) {
-                if (arr[i] == arr[j]) {
-                    duplicate = true;
+        for(int i=1;i<n;i++){
+            boolean dup=false;
+            for(int j=0;j<k;j++){
+                if(arr[j]==arr[i]){
+                    dup=true;
                     break;
                 }
             }
-            if (!duplicate) {
-                arr[k++] = arr[i];
-            }
+            if(!dup)
+            arr[k++]=arr[i];
+
         }
 
         for (int i = 0; i < k; i++) {

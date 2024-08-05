@@ -20,5 +20,8 @@ public class Practice {
        //  System.out.println(x+" "+str+f+"inside main");  // bina initialize kre print krne pr error deta hai
         Asd obj=new Asd();
         obj.putdata();
+        int a=-16;
+        int b=a>>2;
+        System.out.println(b);
     }
 }
