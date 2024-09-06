@@ -21,7 +21,13 @@ public class RotateMatrix {
                 matrix[j][i] = temp;
             }
         }
-
+        
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[0].length; j++) {
+                System.out.print(matrix[i][j] + " ");
+            }
+            System.out.println();
+        }
         // Reverse each row
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n / 2; j++) {

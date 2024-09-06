@@ -6,7 +6,6 @@ public class reverse {
         System.out.println("Enter 5 integers:");
         for (int i = 0; i < 5; i++) 
             a[i] = x.nextInt();
-        Arrays.asList(a).replaceAll(Integer::valueOf);
         Collections.reverse(Arrays.asList(a));
         System.out.println("Reversed array:");
         for (int i = 0; i < 5; i++) 
